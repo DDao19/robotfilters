@@ -1,0 +1,45 @@
+.cardlist-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  max-width: 1250px;
+  max-height: 60rem;
+  padding: 2rem 2rem 0 2rem;
+  margin-bottom: 4.5rem;
+  overflow-y: auto;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 4rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.08);
+
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0,0,0,0.2) transparent;
+}
+.cardlist-container::after {
+  content: "";
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  border-radius: 4rem;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 245, 245, 0),
+    rgba(245, 245, 245, 1)
+  );
+
+  pointer-events: none;
+}
+
+.robot-not-found {
+  padding: 2rem;
+  text-align: center;
+
+  font-size: 1.8rem;
+  font-style: italic;
+  color: red;
+}
